@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/lin_all"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/icon_back" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="网络连接失败" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_tishi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_all"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:text="如需连接到或联网，可以参照以下方法："
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#292421"
+            android:textSize="16dp"
+            android:text="在设备的“设置”-“网络设置”设置面板中，找到移动数据选项，打开。" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#292421"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:text="在设备的“设置”-“无线网络”设置面板中，启用无线网络，选中其中一个可用的WIFI连接。" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#292421"
+            android:textSize="16dp"
+            android:text="每款设备设置网络可能有些许差异，请自行查看！您也可以点击下面的按钮快捷进入设置页面！" />
+        <Button
+            android:id="@+id/bt_3g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tishi"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_keyboardview_yes"
+            android:layout_margin="10dp"
+            android:text="进入网络设置" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:text="如果您已接入WiFi网络："
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#292421"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"
+            android:text="请检查您所连接的WIFI热点是否接入互联网，或该热点是否已允许您的设备访问互联网！" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
